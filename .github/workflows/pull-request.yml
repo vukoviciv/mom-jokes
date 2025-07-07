@@ -1,9 +1,7 @@
 name: Pulumi
 on:
-  pull_request:
-    paths:
-      - "infrastructure/**"
-      - ".github/workflows/pull_request.yml"
+  - pull_request
+
 jobs:
   preview:
     name: Preview
