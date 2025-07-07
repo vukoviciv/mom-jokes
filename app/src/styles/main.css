@@ -1,0 +1,19 @@
+@import './base.css';
+
+#app {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+}
+
+.orange {
+  color: #ff7b00;
+}
