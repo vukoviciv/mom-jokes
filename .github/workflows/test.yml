@@ -1,12 +1,21 @@
-name: Test Pulumi Workflow - Step 1
+name: Test Pulumi Workflow
 on:
   workflow_dispatch:
 
 jobs:
   test:
-    name: Test Checkout Step
+    name: Test Node Setup
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: infrastructure
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: package.json
