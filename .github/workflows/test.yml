@@ -4,7 +4,7 @@ on:
 
 jobs:
   test:
-    name: Test Node Setup
+    name: Test Node Setup and Install
     runs-on: ubuntu-latest
 
     defaults:
@@ -19,3 +19,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version-file: ./infrastructure/package.json
+
+      - name: Install dependencies
+        run: npm install
