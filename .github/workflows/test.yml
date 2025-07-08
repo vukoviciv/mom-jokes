@@ -6,6 +6,7 @@ jobs:
   test:
     name: Test Node Setup and Install
     runs-on: ubuntu-latest
+    environment: mom-jokes-dev
 
     defaults:
       run:
