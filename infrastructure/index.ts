@@ -8,10 +8,10 @@ const ami = aws.ec2.getAmiOutput({
   filters: [
     {
       name: "name",
-      values: ["amzn2-ami-hvm-*"],
+      values: ["ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*"],
     },
   ],
-  owners: ["amazon"],
+  owners: ["099720109477"], // Canonical
   mostRecent: true,
 });
 
