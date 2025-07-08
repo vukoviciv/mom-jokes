@@ -1,0 +1,12 @@
+name: Test Pulumi Workflow - Step 1
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Test Checkout Step
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
