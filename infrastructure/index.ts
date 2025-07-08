@@ -38,6 +38,14 @@ const group = new aws.ec2.SecurityGroup(`${name}-security-group`, {
       cidrBlocks: [vpcCidrBlockAnywhere],
     },
   ],
+  egress: [
+    {
+      fromPort: 0,
+      toPort: 0,
+      protocol: "-1",
+      cidrBlocks: [vpcCidrBlockAnywhere],
+    },
+  ],
 });
 
 // Instance
