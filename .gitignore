@@ -18,3 +18,6 @@ coverage
 
 /bin/
 */node_modules/
+
+# Configuration
+.env
